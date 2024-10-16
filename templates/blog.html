@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block segment %}
+<h2>
+  {{ section.title}}
+</h2>
+
+<div class="bloggrid">
+  <div class="grid-layout">
+    {% for post in section.pages %}
+    <div class="grid-item">
+    <a href="{{ post.permalink | safe }}" class="clickableDisp">
+      <div class="blogDisplay">
+        <h2 class="blogTitle">{{post.title}}</h2>
+        <h3 class="blogDate">{{post.date}}</h3>
+        <h3 class="blogPaperTags">{{post.extra["paper_tags"]}}</h3>
+        <p class="blogBriefDescp">{{post.description}}</p>
+      </div>
+    </a>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+{% endblock segment%}

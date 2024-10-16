@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block segment %}
+<h2>
+  {{ page.title}}
+</h2>
+<p class="subtitle"><strong>{{ page.date }}</strong></p>
+{{ page.content | safe }}
+{% endblock segment%}

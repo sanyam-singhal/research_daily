@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html lang="{{ config.extra.language_code | default(value="en-US") }}">
+
+<head>
+    <meta charset="utf-8">
+    <title>Research Daily</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="/main.css" rel="stylesheet" type="text/css">
+
+    <link href="/favicon.png" rel="shortcut icon" type="image/x-icon">
+    <link href="/webclip.png" rel="apple-touch-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  </head>
+  <body class="body">
+    <div class="topbar">
+      <div class="logo"><img src="/dAIly.png" loading="lazy" alt="" class="logoimage"></div>
+      <h1 class="pagetitle">Research Daily: Top AI papers of the day</h1>
+      <div class="tabs">
+        <div class="tabbar">
+            <a href="/"><h2 class="tablabel">Today</h2></a>
+        </div>
+        <div class="tabbar">
+          <a href="{{ get_url(path='@/blog/_index.md') }}"><h2 class="tablabel">Archive</h2></a>
+        </div>
+      </div>
+    </div>
+    <div class="segment">
+      {% block segment %} {% endblock %}
+    </div>
+  </body>
+</html> 
