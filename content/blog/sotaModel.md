@@ -5,6 +5,7 @@ description = "This is my second blog post."
 
 [extra]
 paper_tags="Diffusion Models, CV, Agents"
+cover_path="/sotaModelCover.png"
 +++
 
 This is my first blog post.

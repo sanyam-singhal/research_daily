@@ -1,23 +1,20 @@
 {% extends "base.html" %}
 
 {% block segment %}
-<h2>
+<h2 class="displayTitle">
   {{ section.title}}
 </h2>
-
 <div class="bloggrid">
-  <div class="grid-layout">
-    {% for post in section.pages %}
-    <div class="grid-item">
-    <a href="{{ post.permalink | safe }}" class="clickableDisp">
-      <div class="blogDisplay">
-        <h2 class="blogTitle">{{post.title}}</h2>
-        <h3 class="blogDate">{{post.date}}</h3>
-        <h3 class="blogPaperTags">{{post.extra["paper_tags"]}}</h3>
-        <p class="blogBriefDescp">{{post.description}}</p>
-      </div>
-    </a>
+  <div class="w-layout-grid gridlayout">
+    {% for page in section.pages %}
+    <a href="{{page.permalink | safe}}" class="clickDisp">
+    <div class="blogdisplay"><img src="{{ page.extra["cover_path"] }}" loading="lazy" alt="" class="blogcoverimage">
+      <h2 class="blogtitle">{{ page.title}}</h2>
+      <h3 class="blogdate">{{ page.date }}</h3>
+      <h3 class="blogpapertags">{{page.extra["paper_tags"]}}</h3>
+      <p class="blogbriefdescp">{{page.description}}</p>
     </div>
+    </a>
     {% endfor %}
   </div>
 </div>

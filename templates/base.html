@@ -21,15 +21,13 @@
       <h1 class="pagetitle">Research Daily: Top AI papers of the day</h1>
       <div class="tabs">
         <div class="tabbar">
-            <a href="/"><h2 class="tablabel">Today</h2></a>
+            <a href="/" class="topNav"><h2 class="tablabel">Today</h2></a>
         </div>
         <div class="tabbar">
-          <a href="{{ get_url(path='@/blog/_index.md') }}"><h2 class="tablabel">Archive</h2></a>
+          <a href="{{ get_url(path='@/blog/_index.md') }}" class="topNav"><h2 class="tablabel">Archive</h2></a>
         </div>
       </div>
     </div>
-    <div class="segment">
-      {% block segment %} {% endblock %}
-    </div>
+    {% block segment %} {% endblock %}
   </body>
 </html> 
