@@ -1,9 +1,14 @@
 {% extends "base.html" %}
 
 {% block segment %}
-<h2>
-  {{ page.title}}
-</h2>
-<p class="subtitle"><strong>{{ page.date }}</strong></p>
-{{ page.content | safe }}
+
+<div class="blogContentDiv">
+  <img src="{{ page.extra["cover_path"] }}" loading="lazy" alt="" class="blogContentCoverImage">
+  
+  <h2 class="blogContentTitle">
+    {{ page.title}}
+  </h2>
+  <p class="blogContentDate"><strong>{{ page.date }}</strong></p>
+  {{ page.content | safe }}
+</div>
 {% endblock segment%}
