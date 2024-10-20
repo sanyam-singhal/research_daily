@@ -8,7 +8,10 @@
   <h2 class="blogContentTitle">
     {{ page.title}}
   </h2>
-  <p class="blogContentDate"><strong>{{ page.date }}</strong></p>
+  <p class="blogContentDate"><strong>{{ page.extra["display_date"] }}</strong></p>
+
+  <p class="blogContentTags">{{page.extra["paper_tags"]}}</p>
+  <a href="{{page.extra["reference_link"] | safe}}" class="blogContentLink">Read the paper</a>
   {{ page.content | safe }}
 </div>
 {% endblock segment%}

@@ -10,7 +10,7 @@
     <a href="{{page.permalink | safe}}" class="clickDisp">
     <div class="blogdisplay"><img src="{{ page.extra["cover_path"] }}" loading="lazy" alt="" class="blogcoverimage">
       <h2 class="blogtitle">{{ page.title}}</h2>
-      <h3 class="blogdate">{{ page.date }}</h3>
+      <h3 class="blogdate">{{ page.extra["display_date"] }}</h3>
       <h3 class="blogpapertags">{{page.extra["paper_tags"]}}</h3>
       <p class="blogbriefdescp">{{page.description}}</p>
     </div>

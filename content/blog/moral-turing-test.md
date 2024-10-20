@@ -6,6 +6,8 @@ description = "This paper addresses a crucial and timely topic: the ethical impl
 [extra]
 paper_tags="LLM Alignment, Moral Decision-Making, AI Ethics, Turing Test"
 cover_path="/agenticRAGCover.png"
+display_date="October 15, 2024"
+reference_link="https://arxiv.org/pdf/2410.07304"
 +++
 
 **1. Overall Summary:**

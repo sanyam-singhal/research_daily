@@ -1,12 +1,13 @@
 +++
-title = "Using GPUs During Bubbles in Pipeline-Parallel LLM Training"
+title = "PipeFill: Using GPUs During Bubbles in Pipeline-Parallel LLM Training"
 date = 2024-10-15
 description = "This paper tackles a significant challenge in LLM training: inefficient GPU utilization due to pipeline bubbles.  The proposed PipeFill method offers a novel solution with the potential to drastically reduce training time and costs for large-scale LLMs, thereby accelerating AI progress."
 
 [extra]
 paper_tags="LLM Training, Pipeline Parallelism, GPU Utilization, GPU Efficiency"
-
 cover_path="/sotaModelCover.png"
+display_date="October 15, 2024"
+reference_link="https://arxiv.org/pdf/2410.07192"
 +++
 
 **1. Overall Summary:**
