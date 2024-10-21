@@ -3,11 +3,12 @@
 {% block meta %}
 
 <meta name="description" content="{{ page.description }}">
+<link rel="canonical" href="{{page.permalink | safe}}" />
 {% endblock meta %}
 {% block segment %}
 
 <div class="blogContentDiv">
-  <img src="{{ page.extra["cover_path"] }}" loading="lazy" alt="" class="blogContentCoverImage">
+  <img src="{{ page.extra["cover_path"] }}" loading="lazy" alt="{{ page.extra["cover_alt"] }}" class="blogContentCoverImage">
   
   <h1 class="blogContentTitle">
     {{ page.title}}
