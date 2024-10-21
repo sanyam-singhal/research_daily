@@ -1,13 +1,17 @@
 {% extends "base.html" %}
 
+{% block meta %}
+
+<meta name="description" content="{{ page.description }}">
+{% endblock meta %}
 {% block segment %}
 
 <div class="blogContentDiv">
   <img src="{{ page.extra["cover_path"] }}" loading="lazy" alt="" class="blogContentCoverImage">
   
-  <h2 class="blogContentTitle">
+  <h1 class="blogContentTitle">
     {{ page.title}}
-  </h2>
+  </h1>
   <p class="blogContentDate"><strong>{{ page.extra["display_date"] }}</strong></p>
 
   <p class="blogContentTags">{{page.extra["paper_tags"]}}</p>
