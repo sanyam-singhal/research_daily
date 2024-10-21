@@ -132,6 +132,17 @@
   margin-left: .25rem;
   font-size: 1.1rem;
 }
+.blogContentTags {
+  color: #3c0753;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: .25rem;
+  font-size: 1.1rem;
+}
+
+
+
 
 .blogbriefdescp {
   text-align: justify;
