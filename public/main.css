@@ -56,7 +56,7 @@
 
 .tabbar {
   background-color: #433878;
-  border-radius: .25rem;
+  border-radius: .5rem;
   flex-flow: column;
   justify-content: center;
   align-items: center;
@@ -65,8 +65,29 @@
   display: flex;
 }
 
+.newslettersignup {
+  background-color: #F05A7E;
+  border-radius: .5rem;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  width: 45%;
+  height: 3.5rem;
+  display: flex;
+  min-width: 350px;
+  margin-bottom: 1rem;
+}
+
 .tablabel {
   color: #ffe1ff;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 1.35rem;
+}
+
+.newslettersignuplabel {
+  color: #ffffff;
   text-align: center;
   margin-top: 0;
   margin-bottom: 0;

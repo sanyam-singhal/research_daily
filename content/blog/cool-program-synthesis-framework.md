@@ -29,9 +29,12 @@ This blog post will delve into the details of COOL, exploring its methodology, r
 
 COOL's strength lies in its unique blend of symbolic reasoning (CoL) and neural network learning (NNFC).  The researchers rigorously evaluated COOL's performance through both static and dynamic experiments:
 
-## Static Experiments:  These experiments used pre-trained neural networks and controlled conditions to isolate the impact of CoL.  They compared multiple groups: a baseline DSL, a heuristic-enhanced DSL, and a CoL DSL (with and without neural networks). This allowed for a clear assessment of CoL's contribution to improved accuracy and efficiency. {.contentSectionHeader}
+* **Static Experiments**:  
+These experiments used pre-trained neural networks and controlled conditions to isolate the impact of CoL.  They compared multiple groups: a baseline DSL, a heuristic-enhanced DSL, and a CoL DSL (with and without neural networks). This allowed for a clear assessment of CoL's contribution to improved accuracy and efficiency.
 
-## Dynamic Experiments: These experiments evaluated COOL under more realistic conditions with varying task domains and difficulties. Neural networks were trained during the synthesis process, reflecting real-world scenarios. This phase revealed the robustness and adaptability of the NNFC mechanism in handling dynamic challenges. {.contentSectionHeader}
+* **Dynamic Experiments**: 
+
+These experiments evaluated COOL under more realistic conditions with varying task domains and difficulties. Neural networks were trained during the synthesis process, reflecting real-world scenarios. This phase revealed the robustness and adaptability of the NNFC mechanism in handling dynamic challenges. 
 
 Performance was meticulously measured using several metrics: accuracy, average tree operations, average transformation pairs, average neural network invocations, and average time spent.  Both relational and symbolic program synthesis tasks of varying complexity served as benchmarks.
 
