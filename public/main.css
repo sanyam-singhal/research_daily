@@ -84,7 +84,7 @@
 
 .blogdisplay {
   grid-column-gap: .2rem;
-  grid-row-gap: .35rem;
+  grid-row-gap: .75rem;
   border-radius: .5rem;
   flex-flow: column;
   align-items: stretch;
@@ -100,7 +100,7 @@
   margin-top: 0;
   margin-bottom: 0;
   margin-left: .25rem;
-  font-size: 1.65rem;
+  font-size: 1.35rem;
 }
 
 .bloggrid {
@@ -130,7 +130,7 @@
   margin-top: 0;
   margin-bottom: 0;
   margin-left: .25rem;
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 .blogContentTags {
   color: #3c0753;
@@ -219,4 +219,22 @@
   display: flex;
   flex-flow: column;
   row-gap: 1rem;
+}
+
+.contentTitleStyle {
+  color: #030637;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.75rem;
+  font-weight: bold;
+}
+
+.contentSectionHeader {
+  color: #030637;
+  text-align: left;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.45rem;
+  font-weight: bold;
 }
