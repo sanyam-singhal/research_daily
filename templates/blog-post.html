@@ -4,6 +4,13 @@
 
 <meta name="description" content="{{ page.description }}">
 <meta name="Keywords" content="{{page.extra["paper_tags"]}}">
+
+<meta property="og:title" content="{{ page.title}}" />
+<meta property="og:description" content="{{ page.description}}" />
+<meta property="og:image" content="{{ page.extra["cover_path"]}}" />
+<meta property="og:url" content="{{page.permalink | safe}}" />
+<meta property="og:type" content="website" />
+
 <link rel="canonical" href="{{page.permalink | safe}}" />
 {% endblock meta %}
 {% block segment %}
