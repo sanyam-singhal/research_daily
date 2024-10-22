@@ -16,7 +16,6 @@
 {% block segment %}
 
 <div class="blogContentDiv">
-  <img src="{{ page.extra["cover_path"] }}" loading="lazy" alt="{{ page.extra["cover_alt"] }}" class="blogContentCoverImage">
   
   <h2 class="blogContentTitle">
     <i>ArXiv Paper Title:</i><br>
@@ -28,6 +27,7 @@
     <i>Keywords:</i><br>
     {{page.extra["paper_tags"]}}</h3>
   <a href="{{page.extra["reference_link"] | safe}}" class="blogContentLink">Read the paper on ArXiv</a>
+  <img src="{{ page.extra["cover_path"] }}" loading="lazy" alt="{{ page.extra["cover_alt"] }}" class="blogContentCoverImage">
   
   {{ page.content | safe }}
 </div>
